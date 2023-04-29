@@ -66,3 +66,9 @@ class LookingForSrcTestCase(unittest.TestCase):
         res = self.add_to_list(search_img_links(test_string10))
         self.assertEqual(res, ['https://avatars.mds.yandex.net/get-direct/4248063/eU9YmqFMglpOOS0xEu_D8g/y180'])
 
+    def test_11(self):
+        test_string11 = '<img src="pic5.jpg">'
+        res = self.add_to_list(search_img_links(test_string11))
+        self.assertEqual(res, ['pic5.jpg'])
+
+
